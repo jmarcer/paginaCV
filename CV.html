@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV de Yo</title>
+  <script src="https://kit.fontawesome.com/f1c41f8039.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css?family=Bungee|Josefin+Sans|Kumar+One+Outline');
+	h1{font-family: 'Bungee', cursive; color: darkorange;}
+	.header2 p{font-family: 'Josefin Sans', sans-serif;}
+  	footer b{font-family: 'Kumar One Outline', cursive; color: burlywood;}
+  	*{
+  		padding: 0;
+  		margin: 0;
+  		text-decoration: none;
+  	}
+
+  	body{
+  	  width: 80vw;
+  	  margin: auto;
+  	  display: grid;
+  	  grid-template-areas: 
+  	  "header1 header1 header2 header2"
+  	  "nav nav nav nav"
+  	  "main1 main1 main2 main2"
+  	  "main3 main3 main4 main4"
+  	  "footer footer footer footer";
+  	  gap: 10px;
+  	}
+
+  	.header1{grid-area: header1; place-self: end}
+  	.header2{
+  		grid-area: header2;
+  	}
+
+    .header2 p{
+  			color: red;
+  		}
+             
+  	nav{
+  		grid-area: nav;
+  		display: flex;
+  		background: maroon;
+  		justify-content: space-evenly;
+  	}
+  	#main1{grid-area: main1}
+  	#main2{grid-area: main2}
+  	#main3{grid-area: main3}
+  	#main4{grid-area: main4}
+  	footer{grid-area: footer}
+
+  	nav a{
+  		flex: 25%;
+  		text-align: center;
+  		color: whitesmoke;
+  		padding: 15px;
+  	}
+
+  	.card{
+  		border: 1px maroon solid;
+  		border-radius: 10px;
+  	}
+
+  	.card-body{
+  		padding: 2px 20px;
+  	}
+
+  	.card-body h3{
+  		padding: 5px 0 3px 0;
+  		color: maroon;
+  	}
+
+  	.card-body h4{
+  		font-size: normal;
+  		color: indianred;
+  		padding: 5px 0 0 0;
+  	}
+
+  	.card a{
+  		display: none;
+  	}
+
+  	li{
+  		padding: 6px;
+  	}
+
+  	#main4 ul{
+  		list-style-type: none;
+  	}
+
+  	#main4 ul li:nth-child(-n+2){
+  		border-bottom: 1px solid #aaa;
+  	}
+
+  	footer{
+  		background-color: darkred;
+	    padding: 10px;
+	    color: antiquewhite;
+	    font-size: 1.2em;
+  	}
+
+  	@media only screen and (min-width: 1px) and (max-width: 767px){
+  	  body{
+  	  	grid-template-areas: 
+  	  	"header1"
+  	  	"header2"
+  	  	"nav"
+  	  	"main1"
+  	  	"main2"
+  	  	"main3"
+  	  	"main4"
+  	  	"footer";
+  	  }
+  	  nav{
+  	  	flex-direction: column;
+  	  }
+  	  .header1{
+  	  	width: 150px;
+  	  	margin: 0 auto;
+  	  }
+  	  #datosPersonales{
+  	  	text-align: center;
+  	  }
+  	  .card a{
+  	  	display: block;
+  	  	border: 1px solid tomato;
+  	  	border-radius: 10px;
+  	  	background: white;
+  	  	color: tomato;
+  	  	text-align: center;
+  	  }
+  	  .card a:hover{
+  	  	background: tomato;
+  	  	color: white;
+  	  }
+  	}
+
+  	@media only screen and (max-width: 991px) and (min-width: 768px){
+  	  body{
+        grid-template-areas: 
+        "header1 header2"
+        "nav nav"
+        "main1 main2"
+        "main3 main4"
+        "footer footer";
+      }
+      nav{flex-wrap: wrap}
+      nav a{flex: 45%}
+  	}
+
+  </style>
+</head>
+<body id="up">
+  
+  <img class="header1" src="https://i.ibb.co/hc2vZfv/homer.png">
+  <div class="header2" id="datosPersonales">
+  	<h1>Vladimir Del Cid</h1>
+  	<p><b>DNI:</b> 12345678<br>
+  	<b>Fecha de nacimiento:</b> ??/??/????<br>
+    <b>Domicilio:</b> ========<br>
+    <b>Teléfono:</b> 11-5555-9876<br>
+    <b>Email:</b> vladimir.delcid@bue.edu.ar</p>
+  </div>
+
+  <nav>
+  	<a href="#main1"><h2><i class="fas fa-book-open"></i><br>Formación<br>Académica</h2></a>
+    <a href="#main2"><h2><i class="fas fa-briefcase"></i><br>Experencia<br> Laboral</h2></a>
+    <a href="#main3"><h2><i class="fas fa-laptop-code"></i><br>Herramientas<br> Informáticas</h2></a>
+    <a href="#main4"><h2><i class="far fa-address-book"></i><br>Referencias</h2></a>
+  </nav>
+
+  <div class="card" id="main1">
+  	<div class="card-body">
+  	  <h3>Formación Académica</h3>
+  	  <h4>Licenciatura en Sistemas</h4>
+  	  <b>Abril 2021 - Presente</b>
+  	  <p>Universidad de Buenos Aires</p>
+  	  <h4>Perito Mercantil con especialidad en comercio</h4>
+  	  <b>Fecha - Diciembre 2020</b>
+  	  <p>Escuela de mi casa porque no se me alguna escuela</p>
+  	</div>
+  	<a href="#up">Ir al inicio</a>
+  </div>
+  <div class="card" id="main2">
+    <div class="card-body">
+      <h3>Experiencia Laboral</h3>
+      <h4>Kiosco “Toto”</h4>
+      <b>Abril 2013 - Noviembre 2015</b>
+      <p>Apertura y cierre del comercio, atención al cliente, control de stock, manejo de caja.</p>
+      <h4>Lugar de trabajo</h4>
+      <b>Fecha - Fecha</b>
+      <p>Descripción de el trabajo realizado.</p>
+      <h4>Kiosco “Toto”</h4>
+      <b>Abril 2013 - Noviembre 2015</b>
+      <p>Apertura y cierre del comercio, atención al cliente, control de stock, manejo de caja.</p>
+    </div>
+    <a href="#up">Ir al inicio</a>
+  </div>
+  <div class="card" id="main3">
+    <div class="card-body">
+      <h3>Herramientas Informáticas</h3>
+      <ul>
+        <li>Paquete de Office (Word, Excel, PowerPoint).</li>
+        <li>Herramientas de Google (Google Docs, Spreadsheets, Slides).</li>
+        <li>HTML, CSS, Bootstrap, Javascript, NodeJs - Principiante</li>
+      </ul>
+    </div>
+    <a href="#up">Ir al inicio</a>
+  </div>
+  <div class="card" id="main4">
+    <div class="card-body">
+      <h3>Referencias</h3>
+      <ul>
+        <li>Nombre de persona: Relación laboral anterior.<br>Mail o teléfono de contacto.</li>
+        <li>Nombre de persona: Relación laboral anterior.<br>Mail o teléfono de contacto.</li>
+        <li>Nombre de persona: Relación laboral anterior.<br>Mail o teléfono de contacto.</li>
+      </ul>
+    </div>
+    <a href="#up">Ir al inicio</a>
+  </div>
+
+  <footer>
+  	<p>Copyright © 2023 - Desarrollado por <b>El Mentor</b></p>
+  </footer>
+</body>
+</html>
