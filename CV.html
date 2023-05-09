@@ -1,232 +1,338 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Julieta Marcer</title>
-  <script src="https://kit.fontawesome.com/f1c41f8039.js" crossorigin="anonymous"></script>
-  <style type="text/css">
-  	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300&family=Ubuntu&display=swap');
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Julieta Marcer</title>
+    <script
+      src="https://kit.fontawesome.com/f1c41f8039.js"
+      crossorigin="anonymous"
+    ></script>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300&family=Ubuntu&display=swap");
 
-	h1{font-family: 'Montserrat', sans-serif; color: purple;}
-	.header2 p{font-family: 'Poppins', sans-serif;;}
-  	footer b{font-family: 'Ubuntu', sans-serif; color: rgb(219, 148, 219);}
-  	*{
-  		padding: 0;
-  		margin: 0;
-  		text-decoration: none;
-  	}
-
-  	body{
-  	  width: 80vw;
-  	  margin: auto;
-  	  display: grid;
-  	  grid-template-areas: 
-  	  "header1 header1 header2 header2"
-  	  "nav nav nav nav"
-  	  "main1 main1 main2 main2"
-  	  "main3 main3 main4 main4"
-  	  "footer footer footer footer";
-  	  gap: 10px;
-  	}
-
-  	.header1{grid-area: header1; place-self: end}
-  	.header2{
-  		grid-area: header2;
-  	}
-
-    .header2 p{
-  		color: black;
-		line-height: 34px;
-    	
-  		}
-             
-  	nav{
-  		grid-area: nav;
-  		display: flex;
-  		background: purple;
-  		justify-content: space-evenly;
-  	}
-  	#main1{grid-area: main1}
-  	#main2{grid-area: main2}
-  	#main3{grid-area: main3}
-  	#main4{grid-area: main4}
-  	footer{grid-area: footer}
-
-  	nav a{
-  		flex: 25%;
-  		text-align: center;
-  		color: whitesmoke;
-  		padding: 15px;
-  	}
-
-  	.card{
-  		border: 2px purple solid;
-  		border-radius: 10px;
-  	}
-
-  	.card-body{
-  		padding: 2px 20px;
-  	}
-
-  	.card-body h3{
-  		padding: 5px 0 3px 0;
-  		color: purple;
-  	}
-
-  	.card-body h4{
-  		font-size: normal;
-  		color: rgb(129, 46, 129);
-  		padding: 5px 0 0 0;
-  	}
-
-  	.card a{
-  		display: none;
-  	}
-
-  	li{
-  		padding: 6px;
-  	}
-
-  	#main4 ul{
-  		list-style-type: none;
-  	}
-
-  	#main4 ul li:nth-child(-n+2){
-  		border-bottom: 1px solid #aaa;
-  	}
-
-  	footer{
-  		background-color: purple;
-	    padding: 10px;
-	    color: antiquewhite;
-	    font-size: 1.2em;
-  	}
-
-  	@media only screen and (min-width: 1px) and (max-width: 767px){
-  	  body{
-  	  	grid-template-areas: 
-  	  	"header1"
-  	  	"header2"
-  	  	"nav"
-  	  	"main1"
-  	  	"main2"
-  	  	"main3"
-  	  	"main4"
-  	  	"footer";
-  	  }
-  	  nav{
-  	  	flex-direction: column;
-  	  }
-  	  .header1{
-  	  	width: 150px;
-  	  	margin: 0 auto;
-  	  }
-  	  #datosPersonales{
-  	  	text-align: center;
-  	  }
-  	  .card a{
-		width: auto;
-  	  	display: block;
-  	  	color: purple;
-		font-weight: bolder;
-  	  	text-align: center;
-		padding-top: 5px;
-		border-radius: 8px;
-  	  }
-  	  .card a:hover{
-  	  	background: rgb(253, 160, 253);
-  	  	color: white;
-
-  	  }
-  	}
-
-  	@media only screen and (max-width: 991px) and (min-width: 768px){
-  	  body{
-        grid-template-areas: 
-        "header1 header2"
-        "nav nav"
-        "main1 main2"
-        "main3 main4"
-        "footer footer";
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        color: purple;
       }
-      nav{flex-wrap: wrap}
-      nav a{flex: 45%}
-  	}
+      .header2 p {
+        font-family: "Poppins", sans-serif;
+      }
+      footer b {
+        font-family: "Ubuntu", sans-serif;
+        color: rgb(219, 148, 219);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+		box-sizing: border-box;
+      }
 
-  </style>
-</head>
-<body id="up">
-  
-  <img class="header1" src="https://i.ibb.co/NS8P6wK/Cv-1.png">
-  <div class="header2" id="datosPersonales">
-  	<h1>Julieta Marcer</h1>
-  	<p><b>Fecha de nacimiento:</b> 02/04/1986<br>
-    <b>Teléfono:</b> 11-6307-5088<br>
-    <b>Email:</b> marcerjulieta@gmail.com<br>
-	<b><a style="color:black" href="https://www.linkedin.com/in/julieta-marcer/" target="_blank">Perfil de LinkedIn</a></b><br>
-	<b><a style="color:black" href="https://www.behance.net/julietamarcer" target="_blank"> Portfolio en Behance</a></b></p>
-  </div>
+      body {
+        width: 80vw;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+          "header1 header1 header2 header2"
+          "nav nav nav nav"
+		  "section1 section1 section1 section1"
+          "main1 main1 main2 main2"
+          "main3 main3 main4 main4"
+          "footer footer footer footer";
+        gap: 10px;
+      }
 
-  <nav>
-  	<a href="#main1"><h2><i class="fas fa-book-open"></i><br>Formación<br>Académica</h2></a>
-    <a href="#main2"><h2><i class="fas fa-briefcase"></i><br>Experencia<br> Laboral</h2></a>
-    <a href="#main3"><h2><i class="fas fa-laptop-code"></i><br>Herramientas<br> Informáticas</h2></a>
-    <a href="#main4"><h2><i class="far fa-address-book"></i><br>Referencias</h2></a>
-  </nav>
+      .header1 {
+        grid-area: header1;
+        place-self: end;
+      }
+      .header2 {
+        grid-area: header2;
+      }
 
-  <div class="card" id="main1">
-  	<div class="card-body">
-  	  <h3>Formación Académica</h3>
-  	  <h4>Tecnicatura Superior en Administración Hotelera</h4>
-  	  <b>Marzo 2008 - Diciembre 2009</b>
-  	  <p>Fundación de Altos Estudios en Ciencias Comerciales.</p>
-  	  <h4>Perito Mercantil con especialidad en comercio</h4>
-  	  <b>Fecha - Diciembre 2020</b>
-  	  <p>Escuela de mi casa porque no se me alguna escuela</p>
-  	</div>
-  	<a href="#up">Ir al inicio</a>
-  </div>
-  <div class="card" id="main2">
-    <div class="card-body">
-      <h3>Experiencia Laboral</h3>
-      <h4>Empleada Administrativa</h4>
-      <b>Junio 2012 - Actualidad</b>
-      <p>Empleada administrativa en el gabinete de asesores del Director General de Protección de Trabajo y asistente de gerencia de la Gerencia Operativa de infracción a la Normativa Laboral. Coordinadora del cuerpo administrativo de la Subgerencia Operativa de Normativa Laboral.</p>
-      <h4>Lugar de trabajo</h4>
-      <b>Fecha - Fecha</b>
-      <p>Descripción de el trabajo realizado.</p>
-      <h4>Kiosco “Toto”</h4>
-      <b>Abril 2013 - Noviembre 2015</b>
-      <p>Apertura y cierre del comercio, atención al cliente, control de stock, manejo de caja.</p>
+      .header2 p {
+        color: black;
+        line-height: 34px;
+      }
+
+      nav {
+        grid-area: nav;
+        display: flex;
+        background: purple;
+        justify-content: space-evenly;
+      }
+
+	  #section1{
+		  grid-area: section1;
+	  }
+      #main1 {
+        grid-area: main1;
+      }
+      #main2 {
+        grid-area: main2;
+      }
+      #main3 {
+        grid-area: main3;
+      }
+      #main4 {
+        grid-area: main4;
+      }
+      footer {
+        grid-area: footer;
+      }
+
+      nav a {
+        flex: 25%;
+        text-align: center;
+        color: whitesmoke;
+        padding: 15px;
+      }
+
+      .card {
+        border: 2px purple solid;
+        border-radius: 10px;
+      }
+
+      .card-body {
+        padding: 2px 20px;
+      }
+
+      .card-body h3 {
+        padding: 5px 0 3px 0;
+        color: purple;
+      }
+
+      .card-body h4 {
+        font-size: normal;
+        color: rgb(129, 46, 129);
+        padding: 5px 0 0 0;
+      }
+
+      .card a {
+        display: none;
+      }
+
+      li {
+        padding: 6px;
+      }
+
+      #main4 ul {
+        list-style-type: none;
+      }
+
+      #main4 ul li:nth-child(-n + 2) {
+        border-bottom: 1px solid #aaa;
+      }
+
+      footer {
+        background-color: purple;
+        padding: 10px;
+        color: antiquewhite;
+        font-size: 1.2em;
+      }
+
+      @media only screen and (min-width: 1px) and (max-width: 767px) {
+        body {
+          grid-template-areas:
+            "header1"
+            "header2"
+            "nav"
+			"section1"
+            "main1"
+            "main2"
+            "main3"
+            "main4"
+            "footer";
+        }
+        nav {
+          flex-direction: column;
+        }
+        .header1 {
+          width: 150px;
+          margin: 0 auto;
+        }
+        #datosPersonales {
+          text-align: center;
+        }
+        .card a {
+          width: auto;
+          display: block;
+          color: purple;
+          font-weight: bolder;
+          text-align: center;
+          padding-top: 5px;
+          border-radius: 8px;
+        }
+        .card a:hover {
+          background: rgb(253, 160, 253);
+          color: white;
+        }
+      }
+
+      @media only screen and (max-width: 991px) and (min-width: 768px) {
+        body {
+          grid-template-areas:
+            "header1 header2"
+            "nav nav"
+			"section1 section1"
+            "main1 main2"
+            "main3 main4"
+            "footer footer";
+        }
+        nav {
+          flex-wrap: wrap;
+        }
+        nav a {
+          flex: 45%;
+        }
+      }
+    </style>
+  </head>
+  <body id="up">
+    <img class="header1" src="https://i.ibb.co/NS8P6wK/Cv-1.png" />
+    <div class="header2" id="datosPersonales">
+      <h1>Julieta Marcer</h1>
+      <p>
+        <b>Fecha de nacimiento:</b> 02/04/1986<br />
+        <b>Teléfono:</b> 11-6307-5088<br />
+        <b>Email:</b> marcerjulieta@gmail.com<br />
+        <b
+          ><a
+            style="color: black"
+            href="https://www.linkedin.com/in/julieta-marcer/"
+            target="_blank"
+            >Perfil de LinkedIn</a
+          ></b
+        ><br />
+        <b
+          ><a
+            style="color: black"
+            href="https://www.behance.net/julietamarcer"
+            target="_blank"
+          >
+            Portfolio en Behance</a
+          ></b
+        >
+      </p>
     </div>
-    <a href="#up">Ir al inicio</a>
-  </div>
-  <div class="card" id="main3">
-    <div class="card-body">
-      <h3>Herramientas Informáticas</h3>
-      <ul>
-        <li>Paquete de Office (Word, Excel, PowerPoint).</li>
-        <li>Herramientas de Google (Google Docs, Spreadsheets, Slides).</li>
-        <li>HTML, CSS, Bootstrap, Javascript, NodeJs - Principiante</li>
-      </ul>
-    </div>
-    <a href="#up">Ir al inicio</a>
-  </div>
-  <div class="card" id="main4">
-    <div class="card-body">
-      <h3>Referencias</h3>
-      <ul>
-        <li>Nombre de persona: Relación laboral anterior.<br>Mail o teléfono de contacto.</li>
-        <li>Nombre de persona: Relación laboral anterior.<br>Mail o teléfono de contacto.</li>
-        <li>Nombre de persona: Relación laboral anterior.<br>Mail o teléfono de contacto.</li>
-      </ul>
-    </div>
-    <a href="#up">Ir al inicio</a>
-  </div>
 
-  <footer>
-  	<p>Copyright © 2023 - Desarrollado por <b>Jmarcer</b></p>
-  </footer>
-</body>
+    <nav>
+      <a href="#main1"
+        ><h2>
+          <i class="fas fa-book-open"></i><br />Formación<br />Académica
+        </h2></a
+      >
+      <a href="#main2"
+        ><h2>
+          <i class="fas fa-briefcase"></i><br />Experencia<br />
+          Laboral
+        </h2></a
+      >
+      <a href="#main3"
+        ><h2>
+          <i class="fas fa-laptop-code"></i><br />Herramientas<br />
+          Informáticas
+        </h2></a
+      >
+      <a href="#main4"
+        ><h2><i class="far fa-address-book"></i><br />Referencias</h2></a
+      >
+    </nav>
+
+	<div class="card" id="section1">
+		<div class="card-boby">
+			<h3>Objetivos Laborales</h3>
+			<p >
+			Me considero una persona entusiasta, motivada, confiable y trabajadora. Poseo muchos años de experiencia en servicio y atención al cliente. Puedo trabajar bien tanto en un entorno de equipo como utilizando mi propia iniciativa. Soy muy organizada, responsable  y capaz de adaptarme a cualquier circunstancia, dando siempre lo mejor de mí.
+			</p>
+		</div>
+	</div>
+	<a href="#up">Ir al inicio</a>
+
+    <div class="card" id="main1">
+      <div class="card-body">
+        <h3>Formación Académica</h3>
+        <h4>Tecnicatura Superior en Administración Hotelera</h4>
+        <b>Marzo 2008 - Diciembre 2009</b>
+        <p>Fundación de Altos Estudios en Ciencias Comerciales.</p>
+        <h4>Diplomatura en Desarrollo Web Full Stack — Online</h4>
+        <b>Marzo 2022 - Noviembre 2022</b>
+        <p>
+          Aprendi a utilizar tecnologías como HTML y CSS, programar en JavaScript y utilizar frameworks como Bootstrap y React.JS
+        </p>
+        <h4>Certificación en Diseño UX/UI de Google — Online</h4>
+        <b>Septiembre 2022 - Enero 2023</b>
+        <p>
+          Completé una capacitación rigurosa diseñada para la preparación laboral de nivel Junior. Los temas incluyeron fundamentos de investigación UX, diseño inclusivo, wireframes, prototipos de alta fidelidad y herramientas como Figma. Realicé proyectos prácticos y desarrolló de portafolio
+        </p>
+		<h4>Curso de Diseño UX/UI en JumpEducation — Online</h4>
+        <b>Octubre 2022 - Diciembre 2022</b>
+        <p>
+			Completé el curso de diseño UX/UI utilizando la metodología ágil Design Thinking. Realicé las distintas etapas del diseño de una app nativa haciendo énfasis en las fases de investigación, prototipado, pruebas de
+			usabilidad. También la creacion de un proyecto digital desde cero.
+        </p>
+		<h4>Curso de Diseño UX/UI Programa codo a codo— Online</h4>
+        <b>Agosto 2022 - Diciembre 2022</b>
+        <p>
+			Ejes temáticos: research y benchmarking, user persona , entrevistas, POV/MVP y arquitectura de la información, user flows, maquetación, prototipo y patrones, métricas y pruebas de usabilidad, atomic design, color y tipografías, branding y logo, UI, heurística y motion.
+        </p>
+      </div>
+      <a href="#up">Ir al inicio</a>
+    </div>
+    <div class="card" id="main2">
+      <div class="card-body">
+        <h3>Experiencia Laboral</h3>
+        <h4>Empleada Administrativa</h4>
+        <b>Junio 2012 - Actualidad</b>
+        <p>
+          Empleada administrativa en el gabinete de asesores del Director General de Protección de Trabajo y asistente de gerencia de la Gerencia Operativa de infracción a la Normativa Laboral. Coordinadora del cuerpo administrativo de la Subgerencia Operativa de Normativa Laboral.
+        </p>
+        <h4>Lugar de trabajo</h4>
+        <b>Fecha - Fecha</b>
+        <p>Descripción de el trabajo realizado.</p>
+        <h4>Kiosco “Toto”</h4>
+        <b>Abril 2013 - Noviembre 2015</b>
+        <p>
+          Apertura y cierre del comercio, atención al cliente, control de stock, manejo de caja.
+        </p>
+      </div>
+      <a href="#up">Ir al inicio</a>
+    </div>
+    <div class="card" id="main3">
+      <div class="card-body">
+        <h3>Herramientas Informáticas</h3>
+        <ul>
+          <li>Paquete de Office (Word, Excel, PowerPoint).</li>
+          <li>Herramientas de Google (Google Docs, Spreadsheets, Slides).</li>
+          <li>HTML, CSS, Bootstrap, Javascript, NodeJs - Principiante</li>
+        </ul>
+      </div>
+      <a href="#up">Ir al inicio</a>
+    </div>
+    <div class="card" id="main4">
+      <div class="card-body">
+        <h3>Referencias</h3>
+        <ul>
+          <li>
+            Nombre de persona: Relación laboral anterior.<br />Mail o teléfono
+            de contacto.
+          </li>
+          <li>
+            Nombre de persona: Relación laboral anterior.<br />Mail o teléfono
+            de contacto.
+          </li>
+          <li>
+            Nombre de persona: Relación laboral anterior.<br />Mail o teléfono
+            de contacto.
+          </li>
+        </ul>
+      </div>
+      <a href="#up">Ir al inicio</a>
+    </div>
+
+    <footer>
+      <p>Copyright © 2023 - Desarrollado por <b>Jmarcer</b></p>
+    </footer>
+  </body>
 </html>
